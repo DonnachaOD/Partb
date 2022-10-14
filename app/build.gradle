@@ -12,17 +12,15 @@ plugins {
     id 'war'
 }
 
-repositories {
+//repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
-    mavenCentral()
-    mavenLocal()
+
 //    maven{
 //    	url 'https://jitpack.io'
 //    }
 
-}
+//}
 
 dependencies {
     //compileJava.options.fork = true
@@ -37,11 +35,15 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
+    // Part a
     implementation 'com.github.DonnachaOD:SoftwareEngIIIA1a:v0.1'
 }
 
 allprojects {
     repositories {
+        jcenter()
+        mavenLocal()
+        mavenCentral()
         maven { url "https://www.jitpack.io" }
     }
 }
