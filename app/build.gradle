@@ -15,7 +15,7 @@ plugins {
 //repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
-
+//    mavenCentral()
 //    maven{
 //    	url 'https://jitpack.io'
 //    }
@@ -35,15 +35,18 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     
+	implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime:5.7.1.RELEASE'
+
     // Part a
-    implementation 'com.github.DonnachaOD:SoftwareEngIIIA1a:v0.1'
+    implementation 'com.github.DonnachaOD:SoftwareEngIIIA1a:v0.6'
 }
 
 allprojects {
-    repositories {
-        jcenter()
-        mavenLocal()
-        mavenCentral()
-        maven { url "https://www.jitpack.io" }
+   repositories {
+      mavenCentral()
+        maven{
+    	    url 'https://jitpack.io'
+       }
+
     }
 }
