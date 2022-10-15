@@ -12,16 +12,6 @@ plugins {
     id 'war'
 }
 
-//repositories {
-    // Use jcenter for resolving dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-//    mavenCentral()
-//    maven{
-//    	url 'https://jitpack.io'
-//    }
-
-//}
-
 dependencies {
     //compileJava.options.fork = true
  	//compileJava.options.forkOptions.executable = 'C:\Program Files\Java\jdk-11.0.16\bin\javac.exe'
@@ -47,6 +37,5 @@ allprojects {
         maven{
     	    url 'https://jitpack.io'
        }
-
     }
 }
